@@ -429,6 +429,12 @@
   #list {
     width: 95%;
   }
+  #services .common_box_size section img{
+    width: 80% ;
+  }
+  #services h2{
+    font-size: 30px !important;
+  }
   #list {
     padding: 20px 0px;
   }
@@ -490,6 +496,48 @@
     cursor: pointer;
     color: #fff;
   }
+
+  #contact {
+    padding: 50px 0px;
+    text-align: center;
+  }
+  #contact h1 {
+    font-size: 45px;
+    font-weight: 800;
+    padding: 25px 0px;
+    margin-bottom: 20px;
+  }
+  #contact .heading {
+    width: 80%;
+    margin: 0 auto;
+  }
+  #contact .heading h1{
+    font-size: 30px !important;
+  }
+
+  #contact .form {
+    width: 92%;
+  }
+  #contact .form input,
+  #contact textarea {
+    width: 100%;
+  }
+  #contact .form #input {
+    flex-direction: column;
+  }
+  #contact .form section input {
+    width: 100%;
+  }
+  #contact .form #input input {
+    margin-bottom: 10px;
+  }
+  #contact .form {
+    display: flex;
+    gap: 20px;
+  }
+
+
+
 }
 
 @media screen and (max-width: 480px) {
