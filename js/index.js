@@ -1,18 +1,13 @@
-var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 1, 
-  spaceBetween: 30, 
-  centeredSlides: true, 
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-//   pagination: {
-//     el: ".swiper-pagination",
-//     clickable: true,
-//   },
-//   autoplay: {
-//     delay: 3000, 
-//     disableOnInteraction: false, 
-//   },
-//   speed: 800, 
+let nav = document.querySelector("#nav-icon");
+let img = document.querySelector("#nav_items .common_box_size section img");
+let list = document.querySelector("#nav_items .common_box_size #list");
+
+nav.addEventListener("click", (e) => {
+    if (img.style.display === "none" && list.style.display === "none" ) {
+        img.style.display = "block"; 
+        list.style.display = "block";
+    } else {
+        img.style.display = "none";   // Hide the image if it's visible
+        list.style.display = "none";  // Hide the link if it's visible
+    }
 });
