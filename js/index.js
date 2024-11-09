@@ -3,7 +3,7 @@ let img = document.querySelector("#nav_items .common_box_size section img");
 let list = document.querySelector("#nav_items .common_box_size #list");
 
 nav.addEventListener("click", (e) => {
-    if (img.style.display === "none" && list.style.display === "none" ) {
+    if (img.style.display === "none" ||img.style.display === "" && list.style.display === "none" || list.style.display === "" ) {
         img.style.display = "block"; 
         list.style.display = "block";
     } else {
